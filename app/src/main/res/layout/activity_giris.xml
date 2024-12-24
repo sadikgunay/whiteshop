@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/girisbackground"
+    tools:context=".GirisActivity">
+
+    <TextView
+        android:id="@+id/yeniUye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="Üye Olmak İçin Tıkla"
+        android:textColor="#1976D2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/girisevaTekLogo"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whiteshopteklogo" />
+
+    <EditText
+        android:id="@+id/girisEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:hint="E-mail Giriniz"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#757575"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/girisSifreInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/girisSifreInput"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittextarkaplan"
+        android:hint="Şifre Giriniz"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#757575"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/uyeGiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/uyeGiris"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="#2196F3"
+        android:text="Giriş Yap"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

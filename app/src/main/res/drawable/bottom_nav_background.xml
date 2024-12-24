@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dış gölge -->
+    <item>
+        <shape>
+            <solid android:color="#0D000000" />
+            <corners android:radius="24dp" />
+            <padding
+                android:bottom="4dp"
+                android:right="3dp"
+                android:left="1dp" />
+        </shape>
+    </item>
+
+    <!-- Orta gölge -->
+    <item>
+        <shape>
+            <solid android:color="#08000000" />
+            <corners android:radius="24dp" />
+            <padding
+                android:bottom="2dp"
+                android:right="2dp"
+                android:left="1dp" />
+        </shape>
+    </item>
+
+    <!-- Ana arka plan -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="#FFFFFF"
+                android:centerColor="#FAFAFA"
+                android:endColor="#F5F5F5"
+                android:type="linear" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <!-- İnce kenar çizgisi -->
+    <item>
+        <shape>
+            <corners android:radius="24dp" />
+            <stroke
+                android:width="0.7dp"
+                android:color="#0A000000" />
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+        </shape>
+    </item>
+
+    <!-- Üst parlaklık efekti -->
+    <item android:top="1dp" android:left="1dp" android:right="1dp">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:startColor="#26FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:type="linear" />
+            <corners
+                android:topLeftRadius="24dp"
+                android:topRightRadius="24dp" />
+        </shape>
+    </item>
+</layer-list>

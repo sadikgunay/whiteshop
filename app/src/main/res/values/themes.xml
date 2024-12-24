@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EvaHome" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#64B5F6</item>
+        <item name="colorSecondaryVariant">#42A5F5</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">#E3F2FD</item>
+        <item name="colorSurface">#BBDEFB</item>
+        <item name="colorOnSurface">#1E3D59</item>
+
+        <!-- Status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Custom styles -->
+        <item name="materialCardViewStyle">@style/CustomCardView</item>
+        <item name="materialButtonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="Theme.EvaHome" parent="Base.Theme.EvaHome" />
+
+    <!-- Custom Card Style -->
+    <style name="CustomCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">0dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <!-- Custom Outlined Button Style -->
+    <style name="CustomOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">#1976D2</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">#1976D2</item>
+    </style>
+
+    <!-- Rounded Image Style -->
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#1E3D59</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="PriceText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#2196F3</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#E3F2FD</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/whiteshoplogo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.EvaHome</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+
+</resources>

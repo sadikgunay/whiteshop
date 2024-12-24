@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.whiteshop.AyarlarFragment">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hesap Ayarları"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- E-posta Güncelleme Bölümü -->
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-posta Güncelleme"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Yeni E-posta Adresi"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        app:layout_constraintTop_toBottomOf="@id/emailTitle"/>
+
+    <EditText
+        android:id="@+id/editTextCurrentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Mevcut Şifre"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"/>
+
+    <Button
+        android:id="@+id/emailGuncelleButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="E-posta Güncelle"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        android:backgroundTint="#48959494"
+        app:layout_constraintTop_toBottomOf="@id/editTextCurrentPassword"/>
+
+    <!-- Şifre Değiştirme Bölümü -->
+    <TextView
+        android:id="@+id/passwordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifre Değiştirme"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/emailGuncelleButon"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextCurrentPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Mevcut Şifre"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        app:layout_constraintTop_toBottomOf="@id/passwordTitle"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Yeni Şifre"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        app:layout_constraintTop_toBottomOf="@id/editTextCurrentPassword1"/>
+
+    <Button
+        android:id="@+id/changePassButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Şifre Değiştir"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:background="@drawable/edittextarkaplan"
+        android:backgroundTint="#48959494"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

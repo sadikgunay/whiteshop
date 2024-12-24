@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "904916869169",
+    "project_id": "whiteshop-f14cf",
+    "storage_bucket": "whiteshop-f14cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904916869169:android:5d4eb84225753eb9753510",
+        "android_client_info": {
+          "package_name": "com.sadikgunay.whiteshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoRw-GXeyMQHdzW3zJjHPkJk2a1WlpbXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

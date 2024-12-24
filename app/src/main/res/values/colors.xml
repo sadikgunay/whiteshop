@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ana Mavi Tonları -->
+    <color name="primary_blue">#2196F3</color>          <!-- Ana mavi renk -->
+    <color name="primary_dark_blue">#1976D2</color>     <!-- Koyu mavi -->
+    <color name="primary_light_blue">#64B5F6</color>    <!-- Açık mavi -->
+    <color name="accent_blue">#42A5F5</color>           <!-- Vurgu mavisi -->
+
+    <!-- Arka Plan Tonları -->
+    <color name="background_light_blue">#E3F2FD</color> <!-- En açık mavi (arka plan) -->
+    <color name="surface_blue">#BBDEFB</color>          <!-- Kart arka planı için -->
+    <color name="divider_blue">#B3E5FC</color>         <!-- Ayraç çizgileri için -->
+
+    <!-- Metin Renkleri -->
+    <color name="text_dark_blue">#1E3D59</color>        <!-- Koyu metin rengi -->
+    <color name="text_medium_blue">#536878</color>      <!-- Orta ton metin -->
+    <color name="text_light_blue">#90CAF9</color>       <!-- Açık metin rengi -->
+
+    <!-- Temel Renkler -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Durum Renkleri -->
+    <color name="success_blue">#4FC3F7</color>          <!-- Başarı durumu -->
+    <color name="warning_blue">#29B6F6</color>          <!-- Uyarı durumu -->
+    <color name="error_blue">#0288D1</color>            <!-- Hata durumu -->
+
+    <!-- Gölgelendirme ve Efektler -->
+    <color name="ripple_blue">#1A2196F3</color>         <!-- Dokunma efekti -->
+    <color name="shadow_blue">#142196F3</color>         <!-- Gölge efekti -->
+    <color name="overlay_blue">#802196F3</color>        <!-- Yarı saydam overlay -->
+
+    <!-- Sistem Renkleri -->
+    <color name="status_bar_blue">#1565C0</color>       <!-- Status bar rengi -->
+    <color name="nav_bar_blue">#1976D2</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="text_gray">#A9A9A9</color>
+    <color name="shadow">#888888</color><!-- Navigation bar rengi -->
+    <color name="colorSurface">#FFFFFF</color>
+
+        <color name="red_color">#FF0000</color>
+        <color name="colorBackground">#FFFFFF</color>
+        <color name="gray_text">#757575</color>
+        <color name="primary_text">#212121</color>
+
+    <!-- Launcher Icon -->
+    <color name="ic_launcher_background">#2196F3</color>
+</resources>
+
+
+
+
+
+

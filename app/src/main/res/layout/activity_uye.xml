@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/girisbackground"
+    tools:context=".UyeActivity">
+
+
+    <ImageView
+        android:id="@+id/girisevaTekLogo"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="493dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whiteshopteklogo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/uyeKaydet"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="#9F000000"
+        android:text="Kaydet"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/uyeEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="E-mail Giriniz"
+        android:includeFontPadding="true"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeAd"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/uyeAd"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/edittextarkaplan"
+        android:ems="10"
+        android:hint="Adınızı ve Soyadınızı Giriniz"
+        android:includeFontPadding="true"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisevaTekLogo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sifreInput"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/edittextarkaplan"
+        android:hint="Şifre Giriniz"
+        android:inputType="text|textPassword"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/uyeKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uyeEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

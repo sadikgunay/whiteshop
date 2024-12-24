@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_blue">
+
+    <!-- Üst Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/primary_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sepetim"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Sepet İçeriği -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sepetList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="false"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Alt Toplam Kartı -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toplam Tutar"
+                android:textSize="16sp"
+                android:textColor="@color/primary_blue"/>
+
+            <TextView
+                android:id="@+id/toplamFiyat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₺47.480,00"
+                android:textSize="20sp"
+                android:textColor="@color/primary_blue"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSepetiTemizle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Sepeti Temizle"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginEnd="8dp"
+                    app:strokeColor="@color/primary_blue"
+                    android:textColor="@color/primary_blue"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSiparisVer"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:text="Sipariş Ver"
+                    android:textAllCaps="false"
+                    app:cornerRadius="8dp"
+                    android:backgroundTint="@color/primary_blue"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

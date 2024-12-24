@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    tools:context=".AnaSayfaFragment">
+
+    <!-- App Bar Layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_blue"
+        app:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Title Text -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürünler"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_weight="1"/>
+
+            <!-- Admin Panel Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/homeAdminPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Paneli"
+                app:icon="@drawable/baseline_admin_panel_settings_24"
+                app:iconTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Product List (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/urunListe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/background_light_blue"/>
+
+    <!-- Floating Action Button to Add Product -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/urunUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="Ürün Ekle"
+        app:icon="@drawable/baseline_cloud_upload_24"
+        app:backgroundTint="@color/primary_blue"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:iconSize="28dp"
+        app:strokeWidth="0dp"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        app:rippleColor="@color/primary_blue"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+

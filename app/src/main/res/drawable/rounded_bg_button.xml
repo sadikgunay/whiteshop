@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Arka Plan Rengi -->
+    <solid android:color="#FFFFFF"/>
+
+    <!-- Yuvarlatılmış Köşeler -->
+    <corners android:radius="16dp"/>
+
+    <!-- Gölgeleme Efekti -->
+    <elevation android:value="4dp"/>
+</shape>
